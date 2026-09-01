@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-container">
+
+        <h1>To-Do List</h1>
+
+        <form class="todo-form">
+            <input 
+                type="text" 
+                id="todo-input" 
+                placeholder="Apa yang ingin dikerjakan?"
+            >
+
+            <button type="submit" id="add-button">
+                +
+            </button>
+        </form>
+
+        <ul id="todo-list">
+
+        </ul>
+
+        <div class="filter-buttons">
+            <button class="filter-button active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-button" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter-button" data-filter="completed">
+                Completed
+            </button>
+        </div>
+
+        <p class="todo-count" id="todo-count">
+            0 tugas tersisa
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
